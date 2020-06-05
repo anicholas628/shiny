@@ -17,7 +17,7 @@ function pokeSubmit(){
     	$("#card").removeAttr('id');
 	    $("#pokename").text(pokemon.name);
 	    $("#pokeimage").attr("src", pokemon.sprites.front_default);
-	    Bounce($("#pokeimage"), 20, '20px', 400);   
+	    Bounce($("#pokeimage"), 20, '20px', 700);   
 	
   	});
 
