@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="flex">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="pokemon">
+  <meta name="author" content="Amber Nicholas">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+   <title>Shiny Pokemon</title>
+
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+
+  <script type="text/javascript" src="app.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="icon" href="pokeball.png" type="image/x-icon"> 
+
+  <!--fonts-->
+
+ </head>
+
+ <body>
+
+<h1 id="heading" class="p-3 mb-2 bg-dark text-white text-center">Welcome to the Shiny Finder</h1>
+<div class="container-fluid">
+<div class="row text-center padding d-flex justify-content-center">
+  <form id=pokeform>
+    <label for="pokenumber">Type the exact name of the Pokemon here: </label>
+    <input id=pokenumber placeholder="Name of the pokemon"/>
+    <button id="submit" type=submit class="btn btn-info">G<img id="pokeball" src="pokeball.png"> </button>
+    <p id="error"></p>
+  </form>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row text-center padding d-flex justify-content-center">
+  <div class="card" id="card">
+    <div id="bounce">
+      <img class="card-img-top" id="pokeimage"/>
+    </div>
+    <h1 class="card-title btn-info align-middle" id=pokename></h1>
+    <div class="card-body">
+      <h2 class="card-text" id="cp"></h2>
+      <h2 class="card-text" id="shiny"></h2>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row padding d-flex justify-content-center">
+  <!---Lists -->
+  <div class="padding">
+    <button id="list" class="fun btn btn-info" data-toggle="collapse" data-target="#shinyButton">List of all Shiny Pokemon</button>
+    <div id="shinyButton" class="collapse">
+      <ul class="list-group" id="shinyList"></ul>
+    </div>
+  </div>
+  <div class="padding">
+    <button class="fun btn btn-info" data-toggle="collapse" data-target="#aloButton">List of Alolan Shiny Pokemon</button>
+    <div id="aloButton" class="collapse">
+      <ul class="list-group" id="alolanList"></ul>
+    </div>
+  </div>
+  <div class="padding">
+    <button class="fun btn btn-info" data-toggle="collapse" data-target="#eggButton">List of Egg Shiny Pokemon</button>
+    <div id="eggButton" class="collapse">
+      <ul class="list-group" id="eggList"></ul>
+    </div>
+  </div>
+  <div class="padding">
+    <button class="fun btn btn-info" data-toggle="collapse" data-target="#raidButton">List of Raid Shiny Pokemon</button>
+    <div id="raidButton" class="collapse">
+      <ul class="list-group" id="raidList"></ul>
+    </div>
+  </div>
+</div>
+</div>
+</body>
