@@ -22,7 +22,7 @@ label {
 
 
 .card {
-	width: 18rem;
+	width: 21rem;
 
 }
 
@@ -92,3 +92,10 @@ label {
 		margin-top: 10px;
 	}
  }
+
+ @media (max-width: 346px) { 
+	#pokename {
+		font-size: 55px;
+	}
+ }
+
